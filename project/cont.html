@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">	
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Personal Portfolio</title>	
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+<header>
+<nav class="navbar">
+ <a href="#" class="logo">ABHI<span>.net</span></a>
+ <ul class="menu-links">
+ <span id="close-btn" class="material-symbols-outlined">close</span>
+ <li><a href="index.html">Home</a></li> 
+ <li><a href="about.html">About me</a></li> 
+ <li><a href="proj.html">Projects</a></li>
+ <li><a href="cont.html">Contact me</a></li>
+ </ul>
+ <span id="menu-btn" class="material-symbols-outlined">menu</span>	
+ </nav>
+ </header>
+ <div class="contact-details">
+ <ul class="cont">Contact Me,
+    <br>
+    <br>
+    <li><a href="https://www.linkedin.com/in/abishay-shriyan-7aa1b5227/"><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/EBEBEB/linkedin.png" alt="linkedin"/>&nbsp;&nbsp;&nbsp;&nbsp;<span>Abishay Shriyan</span></a></li>
+    <br>
+    <li><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/EBEBEB/gmail-new.png" alt="gmail-new"/>&nbsp;&nbsp;&nbsp;&nbsp;<span>abims2003@gmail.com</span></li>
+    <br>
+    <li><a href="https://www.instagram.com/abis_h_a_y/"><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/EBEBEB/instagram-new--v1.png" alt="instagram-new--v1"/>&nbsp;&nbsp;&nbsp;&nbsp;<span>abis_h_a_y</span></a></li>
+    <br>    
+    <li><a href="https://github.com/ABISHAYMS"><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/EBEBEB/github.png" alt="github"/>&nbsp;&nbsp;&nbsp;&nbsp;<span>ABISHAYMS</span></a></li>
+ </ul>
+ </div>
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <script>
+	const header = document.querySelector("header");
+	const menubtn = document.querySelector("#menu-btn");
+	const closebtn = document.querySelector("#close-btn");
+	
+	menubtn.addEventListener("click",() => {
+	  header.classList.toggle("show-mobile-menu");
+	});
+	closebtn.addEventListener("click",() => {
+	  menubtn.click();	
+	});    
+ </script>
+</body>
+</html>
